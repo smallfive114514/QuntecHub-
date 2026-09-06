@@ -1,0 +1,30 @@
+# Dependencies / vendor
+/vendor/
+node_modules/
+
+# Environment & config
+config/config.php
+.env
+
+# Uploaded files (keep index.html placeholder)
+public/uploads/projects/
+public/uploads/**/*
+!public/uploads/index.html
+!public/uploads/.htaccess
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Debug / temp
+*.bak
+*.tmp
+.cache/
