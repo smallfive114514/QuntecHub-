@@ -1,0 +1,32 @@
+<?php
+return function (Router $r): void {
+    $r->get('install', 'InstallController@index');
+    $r->post('install', 'InstallController@store');
+    $r->get('login', 'AuthController@login');
+    $r->post('login', 'AuthController@authenticate');
+    $r->get('logout', 'AuthController@logout');
+    $r->get('', 'DashboardController@index');
+    $r->post('project', 'ProjectController@store');
+    $r->post('project/{id}', 'ProjectController@update');
+    $r->post('project/{id}/delete', 'ProjectController@delete');
+    $r->get('project/{id}', 'ProjectController@show');
+    $r->post('folder', 'FolderController@store');
+    $r->post('folder/{id}', 'FolderController@update');
+    $r->post('folder/{id}/delete', 'FolderController@delete');
+    $r->get('folder/{id}', 'FolderController@show');
+    $r->post('file/upload', 'FileController@upload');
+    $r->post('file/{id}', 'FileController@update');
+    $r->post('file/{id}/delete', 'FileController@delete');
+    $r->post('file/{id}/move', 'FileController@move');
+    $r->get('file/{id}/download', 'FileController@download');
+    $r->get('file/{id}/raw', 'FileController@raw');
+    $r->get('file/{id}/preview', 'FileController@preview');
+    $r->get('file/{id}', 'FileController@show');
+    $r->post('file/{id}/tags', 'TagController@attach');
+    $r->get('file/{id}/versions', 'VersionController@index');
+    $r->post('file/{id}/version/{vid}/revert', 'VersionController@revert');
+    $r->get('file/{id}/version/{vid}/download', 'VersionController@download');
+    $r->post('file/{id}/version', 'VersionController@uploadNew');
+    $r->get('search', 'SearchController@index');
+    $r->notFound('ErrorController@notFound');
+};
