@@ -11,7 +11,10 @@
 
 A lightweight, single-user project file management system built with native PHP and MySQL. No frameworks, no Composer — just upload and run. Perfect for individuals or small teams who need a self-hosted document hub with version control.
 
-> 🇨🇳 中文宝塔面板部署指南：[README_部署.md](README_部署.md)
+> Language:
+[English](./README.md) | [简体中文](./README.zh.md)
+
+> Chinese Development README of Baota Panel：[README_部署.md](README_部署.md)
 
 ---
 

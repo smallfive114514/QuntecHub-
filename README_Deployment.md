@@ -7,6 +7,9 @@ Server environment: **BT Panel 13.0.0 + PHP 8.0 + MySQL 5.6**.
 **Developer**: 小伍
 **Support**: Visit [cloud.quntec.cn](https://cloud.quntec.cn), register an account, and submit a technical support ticket.
 
+> Language:
+[English](./README.md) | [简体中文](./README.zh.md)
+
 ---
 
 ## Step 1: Install Software Environment
