@@ -1,163 +1,163 @@
-# QuntecHub · Project File Management System
+# QuntecHub · 项目文件管理系统
 
 [![PHP 8.0+](https://img.shields.io/badge/PHP-8.0%2B-777BB4?logo=php)](https://www.php.net/)
 [![MySQL 5.6+](https://img.shields.io/badge/MySQL-5.6%2B-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Bootstrap 5](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-> 🌐 **Project by [Quntec (群星云)](https://cloud.quntec.cn)** · Developed by 小伍
+> 🌐 **由 [Quntec（群星云）](https://cloud.quntec.cn) 出品** · 开发者：小伍
 >
-> 🚀 Built on **FileHub** — a lightweight PHP file management foundation
+> 🚀 基于 **FileHub** 构建 —— 一个轻量级 PHP 文件管理基础
 
-A lightweight, single-user project file management system built with native PHP and MySQL. No frameworks, no Composer — just upload and run. Perfect for individuals or small teams who need a self-hosted document hub with version control.
+一个使用原生 PHP 和 MySQL 构建的轻量级、单用户项目文件管理系统。无需框架，无需 Composer —— 上传即可运行。非常适合需要具备版本控制的自托管文档中心的个人或小团队。
 
-> Language:
-[English](./README.md) | [简体中文](./README.zh.md)
+> 语言：
+> [English](./README.md) | 简体中文
 
-> English Development README of Baota Panel：[README_Deployment.md](README_Deployment.md)
-
-> Chinese Development README of Baota Panel：[README_Deployment.zh.md](README_Deployment.zh.md)
----
-
-## About QuntecHub
-
-QuntecHub is a community-driven fork of the **FileHub** project, maintained by the Quntec (群星云) team. We add features, polish the UI, and provide deployment support for Chinese users — especially those using the BT Panel (宝塔面板).
-
-- **Organization**: Quntec / 群星云
-- **Lead Developer**: 小伍
-- **Support**: [cloud.quntec.cn](https://cloud.quntec.cn) — register and submit a support ticket
-- **Most code generated with AI assistance**
+> 宝塔面板中文部署 README：[README_Development.zh.md](README_Development.zh.md)
 
 ---
 
-## Features
+## 关于 QuntecHub
 
-- 📁 Project-based organization — organize files into projects and nested folders
-- 📝 File version history — automatic versioning when uploading files with the same name; revert anytime
-- 👁️ Online preview — images, PDF, text, video, audio, Word (.docx), Excel (.xlsx) — all viewable in the browser
-- 🏷️ Tags & notes — tag files with custom labels and add notes; search across names, notes, and tags
-- 🔍 Global search — find files by name, note content, or tag name
-- 📊 Dashboard — overview of projects, recent files, and storage usage
-- 📱 Responsive UI — built with Bootstrap 5, works on desktop and mobile
-- 🔐 Secure by design — PDO prepared statements, CSRF protection, path traversal prevention
-- 🚀 Web installer — fill in DB credentials and admin account, done in 30 seconds
+QuntecHub 是 **FileHub** 项目的社区驱动分支，由 Quntec（群星云）团队维护。我们添加功能、优化 UI，并为中文用户——尤其是使用宝塔面板的用户——提供部署支持。
 
-## Online Preview Support
+- **组织**：Quntec / 群星云
+- **主要开发者**：小伍
+- **支持**：[cloud.quntec.cn](https://cloud.quntec.cn) —— 注册并提交技术支持工单
+- **大部分代码由 AI 辅助生成**
 
-| Type | Formats | How |
-|------|---------|-----|
-| Image | jpg, png, gif, webp, bmp, svg | Native `<img>` |
-| PDF | pdf | Native `<iframe>` |
-| Text | txt, md, csv, json, xml, yml, log… | Fetch + `<pre>` |
-| Video | mp4, webm, ogg | Native `<video>` |
-| Audio | mp3, wav, m4a | Native `<audio>` |
-| Word | docx | [docx-preview](https://github.com/VolodymyrBaydalka/docxjs) (client-side) |
-| Excel | xlsx, xls | [SheetJS](https://sheetjs.com/) (client-side) |
-| Other | — | Download to view |
+---
 
-## Requirements
+## 功能特性
 
-- **PHP** 8.0 or higher (with `pdo_mysql`, `mbstring` extensions)
+- 📁 基于项目的组织方式 —— 将文件组织到项目和嵌套文件夹中
+- 📝 文件版本历史 —— 上传同名文件时自动创建版本；可随时回滚
+- 👁️ 在线预览 —— 图片、PDF、文本、视频、音频、Word（.docx）、Excel（.xlsx）—— 均可在浏览器中查看
+- 🏷️ 标签与备注 —— 使用自定义标签标记文件并添加备注；可跨名称、备注和标签搜索
+- 🔍 全局搜索 —— 按文件名、备注内容或标签名查找文件
+- 📊 仪表盘 —— 项目、最近文件和存储使用情况概览
+- 📱 响应式 UI —— 使用 Bootstrap 5 构建，适用于桌面端和移动端
+- 🔐 安全设计 —— PDO 预处理语句、CSRF 防护、路径遍历防护
+- 🚀 Web 安装程序 —— 填写数据库凭据和管理员账户，30 秒完成
+
+## 在线预览支持
+
+| 类型 | 格式 | 实现方式 |
+|------|------|----------|
+| 图片 | jpg, png, gif, webp, bmp, svg | 原生 `<img>` |
+| PDF | pdf | 原生 `<iframe>` |
+| 文本 | txt, md, csv, json, xml, yml, log… | Fetch + `<pre>` |
+| 视频 | mp4, webm, ogg | 原生 `<video>` |
+| 音频 | mp3, wav, m4a | 原生 `<audio>` |
+| Word | docx | [docx-preview](https://github.com/VolodymyrBaydalka/docxjs)（客户端） |
+| Excel | xlsx, xls | [SheetJS](https://sheetjs.com/)（客户端） |
+| 其他 | — | 下载后查看 |
+
+## 环境要求
+
+- **PHP** 8.0 或更高版本（需启用 `pdo_mysql`、`mbstring` 扩展）
 - **MySQL** 5.6+ / MariaDB 10.0+
-- **Web server**: Apache (with `mod_rewrite`) or Nginx
-- Browser: any modern browser (Chrome, Firefox, Safari, Edge)
+- **Web 服务器**：Apache（需启用 `mod_rewrite`）或 Nginx
+- 浏览器：任意现代浏览器（Chrome、Firefox、Safari、Edge）
 
-## Installation
+## 安装
 
-### 1. Download
+### 1. 下载
 
-Download the latest release zip and extract it to your web server's document root.
+下载最新发行版 zip 并解压到 Web 服务器的文档根目录。
 
-### 2. Set web root (important!)
+### 2. 设置网站根目录（重要！）
 
-Point your web server's document root to the `public/` directory. This keeps `app/`, `config/`, and other sensitive directories outside the web-accessible path.
+将 Web 服务器的文档根目录指向 `public/` 目录。这样可以将 `app/`、`config/` 等敏感目录置于 Web 可访问路径之外。
 
-### 3. URL rewriting
+### 3. URL 重写
 
-**Nginx:**
+**Nginx：**
 ```nginx
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
 
-# Prevent PHP execution in uploads
+# 阻止 uploads 目录中的 PHP 执行
 location ~* ^/uploads/.*\.(php|phtml|phar|pht|php3|php4|php5|php7)$ {
     deny all;
 }
 ```
 
-**Apache:** Already included in `public/.htaccess` — just make sure `mod_rewrite` is enabled.
+**Apache：** 已包含在 `public/.htaccess` 中 —— 只需确保已启用 `mod_rewrite`。
 
-### 4. Create a database
+### 4. 创建数据库
 
-Create an empty MySQL database (and a database user with full privileges on it).
+创建一个空的 MySQL 数据库（以及一个对该数据库拥有完整权限的数据库用户）。
 
-### 5. Set permissions
+### 5. 设置权限
 
-Make these directories writable by the web server (`www-data` on Debian/Ubuntu, `www` on BT Panel):
+使以下目录可被 Web 服务器写入（Debian/Ubuntu 上为 `www-data`，宝塔面板上为 `www`）：
 ```
-config/          # for writing config.php during install
-public/uploads/  # for uploaded files
+config/          # 用于安装期间写入 config.php
+public/uploads/  # 用于存放上传文件
 ```
 
-### 6. Run the installer
+### 6. 运行安装程序
 
-Open your browser and navigate to your domain. You'll be redirected to the install wizard. Fill in:
-- Database host, port, name, username, password
-- Admin username and password (min 6 chars)
+打开浏览器并访问你的域名。你会被重定向到安装向导。填写：
+- 数据库主机、端口、名称、用户名、密码
+- 管理员用户名和密码（至少 6 个字符）
 
-Click **Install** — the system will create tables, set up the admin account, and write `config/config.php`.
+点击 **安装** —— 系统将创建数据表、设置管理员账户，并写入 `config/config.php`。
 
-### 7. Done
+### 7. 完成
 
-Log in with your admin credentials and start using QuntecHub!
+使用管理员凭据登录，开始使用 QuntecHub！
 
-> 💡 **BT Panel (宝塔面板) users** — check out the step-by-step guide with screenshots: [README_部署.md](README_部署.md) (Chinese)
+> 💡 **宝塔面板用户** —— 查看带截图的逐步指南：[README_部署.md](README_部署.md)（中文）
 
-## Directory Structure
+## 目录结构
 
 ```
 quntechub/
 ├── app/
-│   ├── Controllers/    # Request handlers (10 controllers)
-│   ├── Models/         # Data access layer (6 models)
-│   ├── Views/          # PHP templates (10 views)
-│   ├── core/           # Framework core (Router, Model, Controller, Database, helpers)
-│   ├── bootstrap.php   # App bootstrap
-│   └── routes.php      # Route definitions
+│   ├── Controllers/    # 请求处理器（10 个控制器）
+│   ├── Models/         # 数据访问层（6 个模型）
+│   ├── Views/          # PHP 模板（10 个视图）
+│   ├── core/           # 框架核心（Router、Model、Controller、Database、helpers）
+│   ├── bootstrap.php   # 应用引导文件
+│   └── routes.php      # 路由定义
 ├── config/
 │   └── config.sample.php
-├── public/             # ← Web server document root
-│   ├── uploads/        # Uploaded files (stored by project/year/month)
+├── public/             # ← Web 服务器文档根目录
+│   ├── uploads/        # 上传文件（按项目/年/月存储）
 │   ├── .htaccess
-│   └── index.php       # Entry point
-├── install.sql         # Database schema
-├── LICENSE             # MIT License
-├── README.md           # This file
-└── README_部署.md      # Chinese BT Panel deployment guide
+│   └── index.php       # 入口文件
+├── install.sql         # 数据库结构
+├── LICENSE             # MIT 许可证
+├── README.md           # 英文 README
+├── README.zh.md        # 本文件（中文 README）
+└── README_部署.md      # 宝塔面板中文部署指南
 ```
 
-## How Versioning Works
+## 版本控制如何工作
 
-When you upload a file that has the same name as an existing file in the same folder:
-1. The current file is automatically archived as a new version in `file_versions`
-2. The newly uploaded file becomes the current version
-3. You can view all versions, download any version, or revert to any previous version
-4. When you revert, the current version is also archived (so you can "undo" a revert)
+当你上传的文件与同一文件夹中已有文件同名时：
+1. 当前文件会自动归档为新版本，存入 `file_versions`
+2. 新上传的文件成为当前版本
+3. 你可以查看所有版本、下载任意版本，或回滚到任意历史版本
+4. 回滚时，当前版本也会被归档（因此你可以“撤销”回滚）
 
-## Security
+## 安全性
 
-- All database queries use PDO prepared statements — no SQL injection
-- All user output is escaped with `htmlspecialchars()` — no XSS
-- CSRF tokens on all POST forms
-- Upload filenames are sanitized; path traversal is prevented
-- Uploads directory blocks PHP execution via `.htaccess` / Nginx rule
-- Admin passwords are hashed with `password_hash()` (bcrypt)
-- Sessions use `httponly` and `samesite=Lax` cookie flags
+- 所有数据库查询均使用 PDO 预处理语句 —— 无 SQL 注入
+- 所有用户输出均使用 `htmlspecialchars()` 转义 —— 无 XSS
+- 所有 POST 表单均包含 CSRF 令牌
+- 上传文件名会被清理；防止路径遍历
+- 上传目录通过 `.htaccess` / Nginx 规则阻止 PHP 执行
+- 管理员密码使用 `password_hash()`（bcrypt）哈希存储
+- Session 使用 `httponly` 和 `samesite=Lax` Cookie 标志
 
-## Configuration
+## 配置
 
-Edit `config/config.php` after installation:
+安装后编辑 `config/config.php`：
 
 ```php
 return [
@@ -172,50 +172,50 @@ return [
     'app' => [
         'name'       => 'QuntecHub 项目文件管理系统',
         'upload_dir' => '/path/to/public/uploads',
-        'max_size'   => 0,        // 0 = unlimited (PHP limits still apply)
-        'allow_ext'  => [],       // [] = allow all extensions
+        'max_size'   => 0,        // 0 = 不限制（仍受 PHP 限制）
+        'allow_ext'  => [],       // [] = 允许所有扩展名
     ],
     'installed' => true,
 ];
 ```
 
-## Development
+## 开发
 
-No build step required. Just edit PHP files and refresh.
+无需构建步骤。只需编辑 PHP 文件并刷新。
 
 ```bash
-# Run locally with PHP's built-in server
+# 使用 PHP 内置服务器在本地运行
 php -S 127.0.0.1:8090 -t public public/index.php
 ```
 
-## Contributing
+## 贡献
 
-Contributions are welcome! Feel free to:
-- Report bugs or suggest features by opening an issue
-- Submit pull requests with improvements
-- Translate the UI into more languages
+欢迎贡献！你可以：
+- 通过提交 issue 报告 bug 或建议功能
+- 提交包含改进的 pull request
+- 将 UI 翻译成更多语言
 
-### Roadmap Ideas
-- [ ] Multi-user support with role-based access
-- [ ] File sharing via public links
-- [ ] Recycle bin (soft delete)
-- [ ] Bulk operations (batch delete, batch tag)
-- [ ] Drag & drop upload
-- [ ] Dark mode
-- [ ] WebDAV support
+### 路线图构想
+- [ ] 支持多用户和基于角色的访问控制
+- [ ] 通过公开链接分享文件
+- [ ] 回收站（软删除）
+- [ ] 批量操作（批量删除、批量打标签）
+- [ ] 拖拽上传
+- [ ] 深色模式
+- [ ] WebDAV 支持
 
-## Support
+## 支持
 
-If you encounter issues, you can:
-1. Open an issue on GitHub
-2. Visit [cloud.quntec.cn](https://cloud.quntec.cn), register an account, and submit a technical support ticket
+如果遇到问题，你可以：
+1. 在 GitHub 上提交 issue
+2. 访问 [cloud.quntec.cn](https://cloud.quntec.cn)，注册账户并提交技术支持工单
 
-## License
+## 许可证
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT 许可证 —— 详见 [LICENSE](LICENSE)。
 
-Built on **FileHub** — a lightweight PHP file management system. Modified and maintained by the Quntec team.
+基于 **FileHub** 构建 —— 一个轻量级 PHP 文件管理系统。由 Quntec 团队修改和维护。
 
 ---
 
-Made with ❤️ by the Quntec / 群星云 team.
+由 Quntec / 群星云团队用 ❤️ 制作。
