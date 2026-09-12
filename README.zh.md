@@ -14,7 +14,7 @@
 > 语言：
 > [English](./README.md) | 简体中文
 
-> 宝塔面板中文部署 README：[README_部署.md](README_部署.md)
+> 宝塔面板中文部署 README：[README_Development.zh.md](README_Development.zh.md)
 
 ---
 
