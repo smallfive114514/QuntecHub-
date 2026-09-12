@@ -14,7 +14,7 @@ A lightweight, single-user project file management system built with native PHP 
 > Language:
 [English](./README.md) | [简体中文](./README.zh.md)
 
-> Chinese Development README of Baota Panel：[README_部署.md](README_部署.md)
+> English Development README of Baota Panel：[README_Deployment.md](README_Deployment.md)
 
 ---
 
