@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Bootstrap 5](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-> 🌐 **由 [Quntec（群星云）](https://cloud.quntec.cn) 出品** · 开发者：小伍  执笔梦星云
+> 🌐 **由 [Quntec（群星云）](https://cloud.quntec.cn) 出品** · 开发者：小伍     执笔梦星云
 >
 > 🚀 基于 **FileHub** 构建 —— 一个轻量级 PHP 文件管理基础
 
