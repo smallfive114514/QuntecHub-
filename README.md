@@ -16,6 +16,7 @@ A lightweight, single-user project file management system built with native PHP 
 
 > English Development README of Baota Panel：[README_Deployment.md](README_Deployment.md)
 
+> Chinese Development README of Baota Panel：[README_Deployment.zh.md](README_Deployment.zh.md)
 ---
 
 ## About QuntecHub
